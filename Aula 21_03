@@ -1,0 +1,43 @@
+'''
+num=int(input("digite o numero: "))
+ct=0
+soma=0
+while(num != -1):
+    soma=num+soma
+    num=int(input("digite o numero: "))
+    ct=ct+1
+print("Quantidade de numeros: ",ct,"\nSoma: ",soma)
+'''
+'''
+num=float(input("Nota do aluno 1: "))
+ct=0
+soma=0
+if num<0:
+    print("Nota não pode ser negativa")
+elif num!= 0:
+    while(num != ''):
+        num = float(num)
+        soma=num+soma
+        #num=float(input(f"Nota do aluno {ct+2}: "))
+        num=(input(f"Nota do aluno {ct+2}: "))
+        ct=ct+1
+if ct > 0:
+    media=soma/ct
+    print("Media: ",media)
+'''
+'''
+num=float(input("Digite o número: "))
+soma=0
+ct=0
+
+while(num !=0):
+    if(num%2==0):
+        soma=num+soma
+        ct=ct+1
+    num=float(input("Digite o número: "))
+if soma>0:
+    media=soma/ct
+    print("Média dos pares=",media)
+else:
+    print("Não foi digitado numero par")
+'''
