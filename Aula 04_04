@@ -1,0 +1,57 @@
+'''
+num=int(input("Digite o número: "))
+MenorValor=float('inf')
+ct=0
+soma=0
+while(num != 0):
+    soma=num+soma
+    ct=ct+1
+    if(num<MenorValor):
+        MenorValor=num    
+    num=int(input("Digite o número: "))
+if(MenorValor==float('inf')):
+    print("Nenhum número foi digitado")
+else:
+    print(f"O menor número é: {MenorValor}\nQuantidade de numeros = {ct}\nSoma dos numeros = {soma}")
+'''
+'''
+num=int(input("Digite o número: "))
+MenorValor=float('inf')
+ct=0
+soma=0
+MaiorValor=num
+while(num != -1):
+    soma=num+soma
+    ct=ct+1
+    if(num<MenorValor):
+        MenorValor=num
+    elif(MaiorValor<num):
+        MaiorValor=num
+    num=int(input("Digite o número: "))
+media=soma/ct
+if(MenorValor==float('inf')):
+    print("Nenhum número foi digitado")
+else:
+    print(f"O menor número é: {MenorValor}\nO maior valor é: {MaiorValor}\nQuantidade de numeros = {ct}\nSoma dos numeros = {soma}\nMédia aritmética = {media}")
+'''
+'''
+print("Digite 0 para sair")
+sexo=input("Digite seu sexo: ")
+homens=0
+mulheres=0
+altura=0
+MaiorAltura=altura
+MenorAltura=float('inf')
+while(sexo != "0"):
+    altura=float(input("Digite sua altura: "))
+    if(altura>MaiorAltura):
+        MaiorAltura=altura
+    if(altura<MenorAltura):
+        MenorAltura=altura
+    if(sexo=="m"):
+        homens=homens+1
+    if(sexo=="f"):
+        mulheres=mulheres+1
+    sexo=input("Digite seu sexo: ")
+print(f"A maior altura é: {MaiorAltura}\nA menor altura é: {MenorAltura}\nQuantidade de homens é: {homens}\nQuantidade de mulheres é: {mulheres}")
+'''
