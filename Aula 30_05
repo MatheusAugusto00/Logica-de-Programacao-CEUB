@@ -1,0 +1,83 @@
+#Exemplo 1
+'''
+l_numeros=[]
+print("Digite [-1] para sair")
+num=int(input("Digite o número: "))
+
+while num != -1:
+    l_numeros.append(num)
+    num=int(input("Digite o número: "))
+print("Quantidade de números:",len(l_numeros))
+print("A soma dos números",sum(l_numeros))
+print("A média é:",(sum(l_numeros)/len(l_numeros)))
+'''
+#Exemplo 2
+'''
+l_numeros=[]
+print("Digite [-1] para sair")
+num=float(input("Resultado da prova do 1º aluno: "))
+ct=1
+
+while num != -1:
+    ct=ct+1
+    l_numeros.append(num)
+    num=float(input(f"Resultado da prova do {ct}º aluno: "))
+print("Quantidade de alunos:",len(l_numeros))
+if len(l_numeros)==0:
+    print("A média da turma é: 0")
+else:
+    print(f"A média da turma é: {sum(l_numeros)/len(l_numeros):.2f}")
+'''
+#Exemplo 3
+'''
+num_par=[]
+print("Digite [0] para sair")
+num=int(input("Digite o número: "))
+
+while num!=0:
+    if num%2==0:
+        num_par.append(num)
+    num=int(input("Digite o número: "))
+if len(num_par)==0:
+    print("Não pode ser dividido por zero")
+else:
+    print(f"A média dos números pares é: {sum(num_par)/len(num_par):.2f}")
+'''
+#Exemplo 4
+'''
+num_impar=[]
+num_par=[]
+print("Digite [-1] para sair")
+num=int(input("Digite o número: "))
+
+while num!=-1:
+    if num%2==0:
+        num_par.append(num)
+    elif num%2 != 0:
+        num_impar.append(num)
+    num=int(input("Digite o número: "))
+if len(num_par)==0:
+        print("Não tem número par")
+else:
+        print(f"A média dos números pares é: {sum(num_par)/len(num_par):.2f}")
+if len(num_impar)==0:
+    print("Não tem número ímpar")
+else:
+    print(f"A média dos números impares é: {sum(num_impar)/len(num_impar):.2f}")
+'''
+#Exemplo 5
+'''
+lnumeros=[]
+print("Digite [-1] para sair")
+num=int(input("Digite o número: "))
+while num != -1:
+    lnumeros.append(num)
+    num=int(input("Digite o número: "))
+if len(lnumeros)==0:
+    print("Não foi digitado nenhum valor")
+else:
+    print("O menor valor é:",min(lnumeros))
+    print("O maior valor é:",max(lnumeros))
+    print("A quantidade de valores digitados:",len(lnumeros))
+    print("A soma dos valores digitados:",sum(lnumeros))
+'''
